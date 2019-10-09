@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="bundle.css">
+    <title>Hello, world!</title>
+
+    <style>
+      h1{
+        color: rgb(45, 135, 212)
+      }
+      input[type="text"]{
+        display:block;
+        margin-bottom: 8px;
+        padding: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1>Get all</h1>
+      <div id="GetAllOutput"></div>
+      <button class="btn btn-primary" id="GetAllButton">Get all Music records</button>
+    </div>
+
+    <div class="jumbotron">
+      <h1>Add</h1>
+      <input type="text" id="AddTitel" placeholder="Titel">
+      <input type="text" id="AddArtist" placeholder="Artist">
+      <input type="text" id="AddDuration" placeholder="Duration">
+      <input type="text" id="AddYear" placeholder="Year">
+      <button class="btn btn-primary" id="AddButton">Add Music record</button>
+      <div id="AddOutput"></div>
+    </div>
+
+    <div class="jumbotron">
+        <h1>Delete</h1>
+        <input type="text" id="DeleteId" placeholder="Music id">
+<div id="deleteOutput"></div>
+        <button class="btn btn-primary" id="DeleteButton">Delete Music record</button>
+      </div>
+
+      <div class="jumbotron">
+          <h1>Update</h1>
+          <p>Skriv ID på den sang du vil opdatere</p>
+          <input type="text" id="UpdateId" placeholder="ID">
+          <br>
+          <p>Udfyld ny information</p>
+          <input type="text" id="UpdateTitel" placeholder="Titel">
+          <input type="text" id="UpdateArtist" placeholder="Artist">
+          <input type="text" id="UpdateDuration" placeholder="Duration">
+          <input type="text" id="UpdateYear" placeholder="Year">
+          <button class="btn btn-primary" id="UpdateButton">Update Music record</button>
+        </div>
+
+
+
+
+    <script src="bundle.js"></script>
+  </body>
+</html>
